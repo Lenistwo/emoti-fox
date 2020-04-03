@@ -1,0 +1,3 @@
+[submodule "emoti-fox-web"]
+	path = emoti-fox-web
+	url = https://github.com/Lenistwo/emoti-fox-web.git

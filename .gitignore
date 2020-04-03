@@ -18,7 +18,12 @@ target/
 *.iws
 *.iml
 *.ipr
-
+mvnw.cmd
+mvnw
+emotifox.iml
+src/main/resources/application-dev.properties
+.mvn
+/.mvn
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
