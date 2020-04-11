@@ -12,4 +12,5 @@ public class Person {
     private String name;
     private String surname;
     private Address address;
+    private PersonalData personalData;
 }
