@@ -5,14 +5,14 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
-import pl.lenistwo.emotifox.exceptions.PersonNotFoundException;
+import pl.lenistwo.emotifox.exceptions.ActorNotFoundException;
 
 @CrossOrigin("*")
 @ControllerAdvice
 public class PersonControllerAdvice {
 
     @ResponseBody
-    @ExceptionHandler({PersonNotFoundException.class})
+    @ExceptionHandler({ActorNotFoundException.class})
     public Error handlePersonNotFoundException(Exception e) {
         return new Error(404, e.getMessage());
     }
