@@ -9,7 +9,6 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 
-@CrossOrigin("*")
 @RestController
 @RequestMapping("/actor")
 public class PersonController {

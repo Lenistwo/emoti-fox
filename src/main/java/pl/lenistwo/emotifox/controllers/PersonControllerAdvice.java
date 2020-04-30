@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 import pl.lenistwo.emotifox.exceptions.ActorNotFoundException;
 
-@CrossOrigin("*")
 @ControllerAdvice
 public class PersonControllerAdvice {
 
@@ -21,6 +20,6 @@ public class PersonControllerAdvice {
 
 @AllArgsConstructor
 class Error {
-    private int statusCode;
-    private String message;
+    private final int statusCode;
+    private final String message;
 }
